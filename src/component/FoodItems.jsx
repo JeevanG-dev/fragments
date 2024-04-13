@@ -1,14 +1,11 @@
 import Item from "./Item";
-
+import css from "./Item.module.css";
 function FoodItems({items}) {
 
     
   return (
     <ul className="list-group">
-      {items.map((item) => (
-      
-      <Item key ={item}
-       VegItem={item}></Item>))}
+      {items.map((item) => ( <Item key ={item} VegItem={item} ></Item>))}
     </ul>
   );
 }
